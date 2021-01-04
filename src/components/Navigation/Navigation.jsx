@@ -7,7 +7,6 @@ import {
 	SubNavMenuList,
 	SubNavMenuListItem
 } from '../../components/Navigation/Style';
-import Button from '../Utility/Button';
 import { BodyContainer } from '../StyledComponents/StyledComponents';
 
 class Navigation extends React.Component {
