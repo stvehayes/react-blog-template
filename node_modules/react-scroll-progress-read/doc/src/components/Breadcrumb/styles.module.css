@@ -1,0 +1,17 @@
+.breadcrumb {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.breadcrumb li::after {
+  content: '/';
+  margin: 0 5px;
+
+}
+
+.breadcrumb li:last-child::after {
+  display: none;
+}

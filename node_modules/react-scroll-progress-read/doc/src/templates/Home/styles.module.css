@@ -1,0 +1,12 @@
+.example_list {
+  list-style: none;
+  margin: 20px 0;
+  border: 1px solid #ff6600;
+  background: #eee;
+  padding: 10px 20px;
+}
+
+.example_list li {
+  margin: 5px 10px ;
+  list-style: disc;
+}

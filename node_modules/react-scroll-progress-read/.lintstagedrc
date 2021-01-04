@@ -1,0 +1,11 @@
+{
+  "src/*.{ts,tsx}": [
+    "prettier --write",
+    "tslint",
+    "git add"
+  ],
+  "src/*.{js,jsx,,json,yml,yaml,md,graphql,vue,mjs}": [
+      "prettier --write",
+      "git add",
+  ]
+}
