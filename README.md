@@ -1,5 +1,5 @@
 # About
-You can find a demo version of this template [right here](https://www.steve-hayes.com).
+You can find a demo version of this template [right here](https://sahayes-blog-template.netlify.app/).
 
 This is a templated version of my personal site that I've tried to make as simple as possible for customizing. This was created using [Create React App](https://github.com/facebook/create-react-app), [styled-components](https://styled-components.com/), and deployed with [Netlify](https://netlify.com).
 
