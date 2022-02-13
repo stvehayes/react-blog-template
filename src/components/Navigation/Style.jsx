@@ -5,9 +5,7 @@ export const NavContainer = styled.div`
 	left: 0;
     right: 0;
     top: 0;
-    background: rgba(10, 10, 10, 0.7);
-    -webkit-backdrop-filter: blur(50px);
-    backdrop-filter: blur(50px);
+    background: ${props => props.theme.colors.black};
     z-index: 10;
     border-bottom: 1px solid #212121;
 

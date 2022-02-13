@@ -9,6 +9,7 @@ import {
 const InputComponent = (props) => {
     return(
         <InputContainer>
+            <InputLabel>{props.label}</InputLabel>
             {
                 props.textArea
                     ?
@@ -20,7 +21,6 @@ const InputComponent = (props) => {
                     name={props.label.toLowerCase()}
                 />
             }
-            <InputLabel>{props.label}</InputLabel>
         </InputContainer>
 
     )

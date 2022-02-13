@@ -14,7 +14,7 @@ export default {
         tablet: "900px",
         desktop: "1150px",
     },
-    transition: "all cubic-bezier(0.16, 0.8, 0.45, 1) 0.55s",
+    transition: "all cubic-bezier(0.16, 0.8, 0.45, 1) 0.25s",
     typography: {
         font: "system-ui",
         fontSize: "20px",

@@ -138,9 +138,9 @@ export const Button = styled.button`
     vertical-align: middle;
     cursor: pointer !important;
     outline: none;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.1);
     padding: 1rem 1.25rem;
-    border-radius: 4px;
+    border-radius: 0.5rem;
 
     i {
         -webkit-transition: ${props => props.theme.transition};
@@ -272,10 +272,6 @@ export const CaseStudyImage = styled.div`
 `;
 
 export const CaseLink = styled.a`
-    h2 {
-        transition: ${p => p.theme.transition};
-    }
-
     ${CaseStudyImage} {
         transition: ${p => p.theme.transition};
 
@@ -285,15 +281,7 @@ export const CaseLink = styled.a`
     }
 
     &:hover {
-        h2 {
-            transform: scale(1.05);
-        }
-
         @media (max-width: ${props => props.theme.queries.mobile}) {
-            h2 {
-                transform: none;
-            }
-
             ${CaseStudyImage} {
                 img {
                     transform: none;
@@ -482,29 +470,28 @@ export const Link = styled.a`
 export const Input = styled.input`
     width: 100%;
     background: transparent;
-    border-radius: 4px;
+    border-radius: 0.5rem;
     color: white;
     padding: 1rem;
     -webkit-transition: ${props => props.theme.transition};
     -o-transition: ${props => props.theme.transition};
     transition: ${props => props.theme.transition};
-    margin-top: 2rem;
     -webkit-appearance: none;
     margin-bottom: 2rem;
     font-size: ${props => props.theme.typography.fontSize};
     box-sizing: border-box;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    
+    label {
+        color: ${props => props.theme.colors.white};
+        -webkit-transition: ${props => props.theme.transition};
+        -o-transition: ${props => props.theme.transition};
+        transition: ${props => props.theme.transition};
+    }
+    
     &:focus {
         color: ${props => props.theme.colors.white};
         border-color: ${props => props.theme.colors.white};
-
-        +label {
-            color: ${props => props.theme.colors.white};
-            -webkit-transition: ${props => props.theme.transition};
-            -o-transition: ${props => props.theme.transition};
-            transition: ${props => props.theme.transition};
-        }
     }
 
     ${props => props.error &&
@@ -523,13 +510,12 @@ export const InputLabel = styled.label`
     font-family: ${props => props.theme.typography.font};
     margin-bottom: 0;
     display: block;
-    position: absolute;
-    top: 0;
     font-weight: 700;
     color: ${props => props.theme.colors.white};
     -webkit-transition: ${props => props.theme.transition};
     -o-transition: ${props => props.theme.transition};
     transition: ${props => props.theme.transition};
+    margin-bottom: 0.5rem;
 `;
 
 export const TextArea = styled.textarea`
@@ -537,31 +523,25 @@ export const TextArea = styled.textarea`
     font-weight: 400 !important;
     width: 100%;
     background: transparent;
-    border-radius: 4px;
+    border-radius: 0.5rem;
     color: white;
     padding: 1rem;
     -webkit-transition: ${props => props.theme.transition};
     -o-transition: ${props => props.theme.transition};
     transition: ${props => props.theme.transition};
-    margin-top: 2rem;
     -webkit-appearance: none;
     margin-bottom: 2rem;
     font-size: ${props => props.theme.typography.fontSize};
     box-sizing: border-box;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     resize: vertical;
     min-height: 125px;
-
+    
     &:focus {
         color: ${props => props.theme.colors.white};
         border-color: white;
 
-        +label {
-            color: ${props => props.theme.colors.white};
-            -webkit-transition: ${props => props.theme.transition};
-            -o-transition: ${props => props.theme.transition};
-            transition: ${props => props.theme.transition};
-        }
+        
     }
 `;
 

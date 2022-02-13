@@ -1,0 +1,70 @@
+.h2 {
+  color: #ff6600;
+  border-bottom: 3px solid #ff6600;
+  padding: 0 0 10px 0;
+}
+
+.pagination {
+  display: flex;
+  margin:  50px 0 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #ff6600;
+}
+
+.pagination div {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pagination div a {
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination div:first-child a {
+  display: flex;
+  align-items: center;
+}
+
+.pagination div:last-child a {
+  display: flex;
+  align-items: center;
+}
+
+.pagination div:first-child a::before {
+  display: block;
+  content: '';
+  background: url('./assets/previous.svg') no-repeat;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  margin-right: 10px;
+}
+
+.pagination div:last-child a {
+  display: flex;
+  align-items: center;
+}
+
+.pagination div:last-child a::after {
+  display: block;
+  content: '';
+  background: url('./assets/next.svg') no-repeat;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  margin-left: 10px;
+}
+
+.pagination div:first-child {
+  margin-right: 5px;
+}
+
+.pagination div:last-child {
+  justify-content: flex-end;
+  margin-left: 5px;
+}
